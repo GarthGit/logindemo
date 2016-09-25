@@ -14,6 +14,11 @@
 		1AA1BBED1D97867500B4F2EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1BBEC1D97867500B4F2EC /* Assets.xcassets */; };
 		1AA1BBF01D97867500B4F2EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1BBEE1D97867500B4F2EC /* LaunchScreen.storyboard */; };
 		1AA1BBFB1D97867500B4F2EC /* LoginUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1BBFA1D97867500B4F2EC /* LoginUITests.m */; };
+		1AA1BC671D97B89200B4F2EC /* NSData+CCCryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1BC5A1D97B89200B4F2EC /* NSData+CCCryptUtil.m */; };
+		1AA1BC681D97B89200B4F2EC /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1BC5C1D97B89200B4F2EC /* NSString+Hash.m */; };
+		1AA1BC691D97B89200B4F2EC /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1BC5F1D97B89200B4F2EC /* UserModel.m */; };
+		1AA1BC6A1D97B89200B4F2EC /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1BC621D97B89200B4F2EC /* HttpRequest.m */; };
+		1AA1BC6B1D97B89200B4F2EC /* ResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1BC641D97B89200B4F2EC /* ResponseObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,17 @@
 		1AA1BBF61D97867500B4F2EC /* LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA1BBFA1D97867500B4F2EC /* LoginUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginUITests.m; sourceTree = "<group>"; };
 		1AA1BBFC1D97867500B4F2EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA1BC591D97B89200B4F2EC /* NSData+CCCryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CCCryptUtil.h"; sourceTree = "<group>"; };
+		1AA1BC5A1D97B89200B4F2EC /* NSData+CCCryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CCCryptUtil.m"; sourceTree = "<group>"; };
+		1AA1BC5B1D97B89200B4F2EC /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		1AA1BC5C1D97B89200B4F2EC /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		1AA1BC5E1D97B89200B4F2EC /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		1AA1BC5F1D97B89200B4F2EC /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		1AA1BC611D97B89200B4F2EC /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		1AA1BC621D97B89200B4F2EC /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		1AA1BC631D97B89200B4F2EC /* ResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseObject.h; sourceTree = "<group>"; };
+		1AA1BC641D97B89200B4F2EC /* ResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseObject.m; sourceTree = "<group>"; };
+		1AA1BC661D97B89200B4F2EC /* JTDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDemo.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		1AA1BBDF1D97867500B4F2EC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				1AA1BC571D97B89200B4F2EC /* General */,
 				1AA1BBE31D97867500B4F2EC /* AppDelegate.h */,
 				1AA1BBE41D97867500B4F2EC /* AppDelegate.m */,
 				1AA1BBE61D97867500B4F2EC /* ViewController.h */,
@@ -109,6 +126,56 @@
 				1AA1BBFC1D97867500B4F2EC /* Info.plist */,
 			);
 			path = LoginUITests;
+			sourceTree = "<group>";
+		};
+		1AA1BC571D97B89200B4F2EC /* General */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1BC581D97B89200B4F2EC /* Extension(Branch) */,
+				1AA1BC5D1D97B89200B4F2EC /* Models(Base) */,
+				1AA1BC601D97B89200B4F2EC /* NetworkService */,
+				1AA1BC651D97B89200B4F2EC /* Public */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		1AA1BC581D97B89200B4F2EC /* Extension(Branch) */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1BC591D97B89200B4F2EC /* NSData+CCCryptUtil.h */,
+				1AA1BC5A1D97B89200B4F2EC /* NSData+CCCryptUtil.m */,
+				1AA1BC5B1D97B89200B4F2EC /* NSString+Hash.h */,
+				1AA1BC5C1D97B89200B4F2EC /* NSString+Hash.m */,
+			);
+			path = "Extension(Branch)";
+			sourceTree = "<group>";
+		};
+		1AA1BC5D1D97B89200B4F2EC /* Models(Base) */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1BC5E1D97B89200B4F2EC /* UserModel.h */,
+				1AA1BC5F1D97B89200B4F2EC /* UserModel.m */,
+			);
+			path = "Models(Base)";
+			sourceTree = "<group>";
+		};
+		1AA1BC601D97B89200B4F2EC /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1BC611D97B89200B4F2EC /* HttpRequest.h */,
+				1AA1BC621D97B89200B4F2EC /* HttpRequest.m */,
+				1AA1BC631D97B89200B4F2EC /* ResponseObject.h */,
+				1AA1BC641D97B89200B4F2EC /* ResponseObject.m */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		1AA1BC651D97B89200B4F2EC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1BC661D97B89200B4F2EC /* JTDemo.pch */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +280,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AA1BBE81D97867500B4F2EC /* ViewController.m in Sources */,
+				1AA1BC6B1D97B89200B4F2EC /* ResponseObject.m in Sources */,
 				1AA1BBE51D97867500B4F2EC /* AppDelegate.m in Sources */,
+				1AA1BC691D97B89200B4F2EC /* UserModel.m in Sources */,
 				1AA1BBE21D97867500B4F2EC /* main.m in Sources */,
+				1AA1BC6A1D97B89200B4F2EC /* HttpRequest.m in Sources */,
+				1AA1BC681D97B89200B4F2EC /* NSString+Hash.m in Sources */,
+				1AA1BC671D97B89200B4F2EC /* NSData+CCCryptUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Login/General/Public/JTDemo.pch";
 				INFOPLIST_FILE = Login/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -356,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Login/General/Public/JTDemo.pch";
 				INFOPLIST_FILE = Login/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -405,6 +479,7 @@
 				1AA1BC011D97867500B4F2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AA1BC021D97867500B4F2EC /* Build configuration list for PBXNativeTarget "LoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +488,7 @@
 				1AA1BC041D97867500B4F2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

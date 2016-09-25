@@ -1,0 +1,22 @@
+//
+//  JTDemo.pch
+//  JTDemo
+//
+//  Created by gejizhou on 16/9/25.
+//  Copyright © 2016年 尹江涛. All rights reserved.
+//
+
+#ifndef JTDemo_pch
+#define JTDemo_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+//宏定义
+
+#import "HttpRequest.h"
+#import "UserModel.h"
+
+#import "ResponseObject.h"
+
+#endif /* JTDemo_pch */
